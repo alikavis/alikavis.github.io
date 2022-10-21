@@ -1,15 +1,12 @@
 ---
-title: "Paper Title Number 2"
+title: "UniXGrad: A Universal, Adaptive Algorithm with Optimal Guarantees for Constrained Optimization"
 collection: publications
-permalink: /publication/2010-10-01-paper-title-number-2
+permalink: /publication/unixgrad
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+date: 2019-12-01
+venue: 'NeurIPS 2019'
+paperurl: '[UniXGrad](https://proceedings.neurips.cc/paper/2019/file/88855547570f7ff053fff7c54e5148cc-Paper.pdf)'
+citation: 'A. Kavis∗, K. Y. Levy∗, F. Bach, V. Cevher. (2010). &quot;UniXGrad: A Universal, Adaptive Algorithm with Optimal Guarantees for Constrained Optimization.&quot; <i>NeurIPS 2019</i>.'
 ---
-This paper is about the number 2. The number 3 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
-
-Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
+[Download]([http://academicpages.github.io/files/paper2.pdf](https://proceedings.neurips.cc/paper/2019/file/88855547570f7ff053fff7c54e5148cc-Paper.pdf))
