@@ -11,30 +11,19 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Computer Engineering (Salutatorian), Bilkent University, 2012-2017
+* Ph.D in Computer and Communication Sciences, EPFL, 09/2017 - 08/2023
 
-Work experience
+Professional experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Research Assistant, September 2017 - Present
+  * EPFL
+  * School of Computer and Communication Sciences
+  * Supervisor: Volkan Cevher
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Tutorial at EUSIPCO 2021, January 2021
+  * Adaptive Optimization Methods for Machine Learning and Signal Processing
+  * Lecturers: Ali Kavis, Ahmet Alacaoglu, Kfir Levy, Volkan Cevher
 
 Publications
 ======
@@ -48,12 +37,20 @@ Talks
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
-Teaching
+Honors and Awards
 ======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Comprehensive Scholarship (Tuition waiver with monthly stipend), Bilkent University, 2012-2017
+* EPFL IC Doctoral Studies Fellowship, 2017-2018
+* Spotlight Paper, NeurIPS 2018 & 2019
+* Travel Award, Neurips 2019 
   
-Service and leadership
+Professional Service
 ======
-* Currently signed in to 43 different slack teams
+* Reviewer
+  * NeurIPS, 2020-2022
+  * COLT, 2022
+  * ICLR, 2021
+
+Skills
+======
+* Python, PyTorch, C/C++, MATLAB
