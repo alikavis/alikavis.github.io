@@ -3,7 +3,7 @@ title: "Mirrored Langevin Dynamics"
 collection: publications
 permalink: /publication/mirrored-langevin-dynamics
 excerpt:
-date: 2018
+date: 2018-12-01
 venue: 'NeurIPS 2018'
 paperurl: '[neurips.cc](https://proceedings.neurips.cc/paper/2018/file/6490791e7abf6b29a381288cc23a8223-Paper.pdf)'
 citation: 'Y. Hsieh, A. Kavis, P. Rolland, V. Cevher. &quot;Mirrored Langevin Dynamics&quot; <i>NeurIPS 2018</i>.'
