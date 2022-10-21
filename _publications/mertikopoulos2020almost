@@ -1,1 +1,14 @@
+---
+title: "On the almost sure convergence of stochastic gradient descent in non-convex problems"
+collection: publications
+permalink: /publication/mertikopoulos2020almost
+excerpt:
+date: 2020-12-01
+venue: 'NeurIPS 2020'
+paperurl: '[neurips.cc](https://proceedings.neurips.cc/paper/2020/file/0cb5ebb1b34ec343dfe135db691e4a85-Paper.pdf)'
+citation: 'P. Mertikopoulos, N. Hallak, A. Kavis, V. Cevher.. <b>NeurIPS 2020</b>.'
+---
 
+[Download]([mertikopoulos2020almost](https://proceedings.neurips.cc/paper/2020/file/0cb5ebb1b34ec343dfe135db691e4a85-Paper.pdf))
+
+<!-- Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1). -->
