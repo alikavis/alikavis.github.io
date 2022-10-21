@@ -6,7 +6,7 @@ excerpt:
 date: 2019-07-01
 venue: 'ICML 2019'
 paperurl: '[mlr.press](http://proceedings.mlr.press/v97/rolland19a/rolland19a.pdf)'
-citation: 'P. T. Y. Rolland, A. Kavis, A. Immer, A. Singla, V. Cevher. &quot;Efficient learning of smooth probability functions from Bernoulli tests with guarantees.&quot; <i>ICML 2019</i>.'
+citation: 'P. T. Y. Rolland, A. Kavis, A. Immer, A. Singla, V. Cevher. <b>ICML 2019</b>.'
 ---
 
-[Download]([bernoulli-process-icml19](http://proceedings.mlr.press/v97/rolland19a/rolland19a.pdf))
+[Download]([rolland2019efficient](http://proceedings.mlr.press/v97/rolland19a/rolland19a.pdf))
