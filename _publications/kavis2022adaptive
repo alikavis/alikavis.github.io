@@ -2,10 +2,11 @@
 title: "Adaptive Stochastic Variance Reduction for Non-convex Finite-Sum Minimization"
 collection: publications
 permalink: /publication/kavis2022adaptive
+authirs: 'A. Kavis<b>*</b>, S. Skoulakis<b>*</b>, K. Antonakopoulos, L. T. Dadi, V. Cevher.'
 excerpt:
 date: 2022-12-01
 venue: 'NeurIPS 2022'
-paperurl: '[neurips.cc]()'
+paperurl: '([neurips.cc]())'
 citation: 'A. Kavis*, S. Skoulakis*, K. Antonakopoulos, L. T. Dadi, V. Cevher. <b>NeurIPS 2022</b>.'
 ---
 
