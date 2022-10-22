@@ -2,10 +2,11 @@
 title: "STORM+: Fully Adaptive SGD with Recursive Momentum for Nonconvex Optimization"
 collection: publications
 permalink: /publication/levy2021storm
+authors: 'K. Y. Levy, A. Kavis, V. Cevher.'
 excerpt:
 date: 2021-12-01
 venue: 'NeurIPS 2021'
-paperurl: '[neurips.cc](https://proceedings.neurips.cc/paper/2021/file/ac10ff1941c540cd87c107330996f4f6-Paper.pdf)'
+paperurl: '([neurips.cc](https://proceedings.neurips.cc/paper/2021/file/ac10ff1941c540cd87c107330996f4f6-Paper.pdf))'
 citation: 'K. Y. Levy, A. Kavis, V. Cevher. <b>NeurIPS 2021</b>.'
 ---
 
