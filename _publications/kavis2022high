@@ -2,10 +2,11 @@
 title: "High Probability Bounds for a Class of Non-convex Algorithms with AdaGrad Stepsize"
 collection: publications
 permalink: /publication/kavis2022high
+authors: 'A. Kavis, K. Y. Levy, V. Cevher.'
 excerpt:
 date: 2022-04-01
 venue: 'ICLR 2022'
-paperurl: '[neurips.cc](https://openreview.net/pdf?id=dSw0QtRMJkO)'
+paperurl: '([neurips.cc](https://openreview.net/pdf?id=dSw0QtRMJkO))'
 citation: 'A. Kavis, K. Y. Levy, V. Cevher. <b>ICLR 2022</b>.'
 ---
 
