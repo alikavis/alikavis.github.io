@@ -6,10 +6,10 @@ authors: 'P. T. Y. Rolland, A. Eftekhari, A. Kavis, V. Cevher.'
 excerpt:
 date: 2020-07-01
 venue: 'ICML 2020'
-paperurl: '([mlr.press](http://proceedings.mlr.press/v119/rolland20a/rolland20a.pdf))'
+paperurl: 'http://proceedings.mlr.press/v119/rolland20a/rolland20a.pdf'
 citation: 'P. T. Y. Rolland, A. Eftekhari, A. Kavis, V. Cevher. <b>ICML 2020</b>.'
 ---
 
-[Download]([rolland2020double](http://proceedings.mlr.press/v119/rolland20a/rolland20a.pdf))
+<!-- [Download]([rolland2020double](http://proceedings.mlr.press/v119/rolland20a/rolland20a.pdf)) -->
 
 <!-- Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1). -->
