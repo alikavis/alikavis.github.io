@@ -6,10 +6,10 @@ authors: 'K. Antonakopoulos<b>*</b>, A. Kavis<b>*</b>, V. Cevher.'
 excerpt:
 date: 2022-12-01
 venue: 'NeurIPS 2022'
-paperurl: '[neurips.cc]()'
+paperurl: ''
 citation: 'K. Antonakopoulos<b>*</b>, A. Kavis<b>*</b>, V. Cevher. <b>NeurIPS 2022</b>.'
 ---
 
-[Download]([antonakopoulos2022extranewton]())
+<!-- [Download]([antonakopoulos2022extranewton]()) -->
 
 <!-- Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1). -->
