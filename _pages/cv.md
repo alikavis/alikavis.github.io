@@ -46,9 +46,9 @@ Honors and Awards
 Professional Service
 ======
 * Reviewer
-  * NeurIPS, 2020-2022
-  * COLT, 2022
-  * ICLR, 2021
+  * NeurIPS
+  * COLT
+  * ICLR
 
 Skills
 ======
