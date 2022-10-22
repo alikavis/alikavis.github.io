@@ -10,6 +10,12 @@ redirect_from:
 
 I am a last year PhD candidate at EPFL, Switzerland. My research focuses on developing universal and adaptive algorithms for solving stochastic optimization problems. My interests range from first-order minimization problems to second and higher-order methods, as well as their extensions to variational inequalities, games and min-max optimization.
 
+Publications:
+------
+<ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
 <!-- Header 1
 ======
 
