@@ -2,6 +2,7 @@
 title: "UniXGrad: A Universal, Adaptive Algorithm with Optimal Guarantees for Constrained Optimization"
 collection: publications
 permalink: /publication/kavis2019unixgrad
+authors: 'A. Kavis<b>*</b>, K. Y. Levy<b>*</b>, F. Bach, V. Cevher.'
 excerpt:
 date: 2019-12-01
 venue: 'NeurIPS 2019'
