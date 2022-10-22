@@ -2,10 +2,11 @@
 title: "Double-Loop Unadjusted Langevin Algorithm"
 collection: publications
 permalink: /publication/rolland2020double
+authors: 'P. T. Y. Rolland, A. Eftekhari, A. Kavis, V. Cevher.'
 excerpt:
 date: 2020-07-01
 venue: 'ICML 2020'
-paperurl: '[mlr.press](http://proceedings.mlr.press/v119/rolland20a/rolland20a.pdf)'
+paperurl: '([mlr.press](http://proceedings.mlr.press/v119/rolland20a/rolland20a.pdf))'
 citation: 'P. T. Y. Rolland, A. Eftekhari, A. Kavis, V. Cevher. <b>ICML 2020</b>.'
 ---
 
