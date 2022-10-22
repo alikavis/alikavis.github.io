@@ -2,7 +2,7 @@
 title: "On the almost sure convergence of stochastic gradient descent in non-convex problems"
 collection: publications
 permalink: /publication/mertikopoulos2020almost
-authirs: 'P. Mertikopoulos, N. Hallak, A. Kavis, V. Cevher.'
+authors: 'P. Mertikopoulos, N. Hallak, A. Kavis, V. Cevher.'
 excerpt:
 date: 2020-12-01
 venue: 'NeurIPS 2020'
