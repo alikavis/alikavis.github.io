@@ -3,7 +3,7 @@ title: "Extra-Newton: A First Approach to Noise-Adaptive Accelerated Second-Orde
 collection: publications
 permalink: /publication/antonakopoulos2022extranewton
 excerpt:
-date: 2021-12-01
+date: 2022-12-01
 venue: 'NeurIPS 2022'
 paperurl: '[neurips.cc]()'
 citation: 'K. Antonakopoulos*, A. Kavis*, V. Cevher. <b>NeurIPS 2022</b>.'
