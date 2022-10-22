@@ -6,8 +6,8 @@ authors: 'P. T. Y. Rolland, A. Kavis, A. Immer, A. Singla, V. Cevher.'
 excerpt:
 date: 2019-07-01
 venue: 'ICML 2019'
-paperurl: '([mlr.press](http://proceedings.mlr.press/v97/rolland19a/rolland19a.pdf))'
+paperurl: 'http://proceedings.mlr.press/v97/rolland19a/rolland19a.pdf'
 citation: 'P. T. Y. Rolland, A. Kavis, A. Immer, A. Singla, V. Cevher. <b>ICML 2019</b>.'
 ---
 
-[Download]([rolland2019efficient](http://proceedings.mlr.press/v97/rolland19a/rolland19a.pdf))
+<!-- [Download]([rolland2019efficient](http://proceedings.mlr.press/v97/rolland19a/rolland19a.pdf)) -->
