@@ -12,7 +12,7 @@ I am a last year PhD candidate at EPFL, Switzerland. My research focuses on deve
 
 Selected Publications:
 ------
-<ul>{% for post in site.publications %}
+<ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
