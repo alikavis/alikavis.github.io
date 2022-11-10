@@ -1,6 +1,7 @@
 ---
 title: "STORM+: Fully Adaptive SGD with Recursive Momentum for Nonconvex Optimization"
 collection: publications
+selected: true
 permalink: /publication/levy2021storm
 authors: 'K. Y. Levy, A. Kavis, V. Cevher.'
 excerpt:

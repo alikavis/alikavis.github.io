@@ -1,6 +1,7 @@
 ---
 title: "Adaptive Stochastic Variance Reduction for Non-convex Finite-Sum Minimization"
 collection: publications
+selected: true
 permalink: /publication/kavis2022adaptive
 authors: 'A. Kavis<b>*</b>, S. Skoulakis<b>*</b>, K. Antonakopoulos, L. T. Dadi, V. Cevher.'
 excerpt:

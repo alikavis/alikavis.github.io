@@ -1,6 +1,7 @@
 ---
 title: "Extra-Newton: A First Approach to Noise-Adaptive Accelerated Second-Order Methods"
 collection: publications
+selected: true
 permalink: /publication/antonakopoulos2022extranewton
 authors: 'K. Antonakopoulos<b>*</b>, A. Kavis<b>*</b>, V. Cevher.'
 excerpt:
