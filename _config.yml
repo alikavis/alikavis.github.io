@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Ali Kavis"
   avatar           : "photo.jpg"
-  bio              : "PhD Candidate at EPFL"
+  bio              : "Postdoctoral Fellow at UT Austin"
   location         :
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=sPrPq6oAAAAJ&hl=en"
-  email            : "ali.kavis@epfl.ch"
+  email            : &email
   researchgate     : "https://www.researchgate.net/profile/Ali-Kavis"
   dblp             : "https://dblp.org/pid/231/7697.html"
   uri              : 
