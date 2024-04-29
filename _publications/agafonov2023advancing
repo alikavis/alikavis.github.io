@@ -5,7 +5,7 @@ selected: true
 permalink: /publication/agafonov2023advancing
 excerpt:
 date: 2023-09-04
-venue: 'arXiv'
+venue: 'ICLR 2024'
 authors: 'A. Agafonov, D. Kamzolov, A. Gasnikov, A. Kavis, K. Antonakopoulos, V. Cevher, M. Takáč'
 paperurl: 'https://arxiv.org/pdf/2309.01570.pdf'
 citation: 'A. Agafonov, D. Kamzolov, A. Gasnikov, A. Kavis, K. Antonakopoulos, V. Cevher, M. Takáč. <b>arXiv</b>.'
