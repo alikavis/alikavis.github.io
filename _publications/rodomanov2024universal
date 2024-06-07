@@ -5,10 +5,10 @@ selected: true
 permalink: /publication/rodomanov2024universal
 excerpt:
 date: 2024-02-05
-venue: 'arXiv'
+venue: 'ICML 2024'
 authors: 'A. Rodomanov, A. Kavis, Y. Wu, K. Antonakopoulos, V. Cevher'
 paperurl: 'https://arxiv.org/pdf/2402.03210'
-citation: 'A. Rodomanov, A. Kavis, Y. Wu, K. Antonakopoulos, V. Cevher. <b>arXiv</b>.'
+citation: 'A. Rodomanov, A. Kavis, Y. Wu, K. Antonakopoulos, V. Cevher. <b>ICML 2024</b>.'
 ---
 
 <!-- [Download](https://proceedings.neurips.cc/paper/2021/file/6d65b5ac1f4ec80b9a7309311f4f9b13-Paper.pdf) -->
