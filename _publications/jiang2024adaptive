@@ -5,10 +5,10 @@ selected: true
 permalink: /publication/jiang2024adaptive
 excerpt:
 date: 2024-06-05
-venue: 'arXiv'
+venue: 'NeurIPS 2024'
 authors: 'R. Jiang, A. Kavis, Q. Jin, S. Sanghavi, A. Mokhtari'
-paperurl: 'https://www.arxiv.org/pdf/2406.02016'
-citation: 'R. Jiang, A. Kavis, Q. Jin, S. Sanghavi, A. Mokhtari. <b>arXiv</b>.'
+paperurl: 'https://proceedings.neurips.cc/paper_files/paper/2024/file/ab41313eaa3cbedbe491c24cbfe6547d-Paper-Conference.pdf'
+citation: 'R. Jiang, A. Kavis, Q. Jin, S. Sanghavi, A. Mokhtari. <b>NeurIPS 2024</b>.'
 ---
 
 <!-- [Download](https://proceedings.neurips.cc/paper/2021/file/6d65b5ac1f4ec80b9a7309311f4f9b13-Paper.pdf) -->
