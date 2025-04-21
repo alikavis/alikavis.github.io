@@ -8,7 +8,7 @@ date: 2025-05-01
 venue: 'arXiv'
 authors: 'S. Sanyal<b>*</b>, H. Prairie<b>*</b>, R. Das<b>*</b>, A. Kavis<b>*</b>, S. Sanghavi'
 paperurl: 'https://arxiv.org/pdf/2502.02797'
-citation: 'S. Sanyal, H. Prairie, R. Das, A. Kavis, S. Sanghavi. <b>arXiv</b>.'
+citation: 'S. Sanyal*, H. Prairie*, R. Das*, A. Kavis*, S. Sanghavi. <b>arXiv</b>.'
 ---
 
 <!-- [Download](https://proceedings.neurips.cc/paper/2021/file/6d65b5ac1f4ec80b9a7309311f4f9b13-Paper.pdf) -->
