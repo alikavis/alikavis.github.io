@@ -5,12 +5,12 @@ selected: true
 permalink: /publication/bansal2025understanding
 excerpt:
 date: 2025-02-06
-venue: 'arXiv'
+venue: 'NeurIPS 2025'
 authors: 'P. Bansal, A. Kavis, S. Sanghavi'
-paperurl: 'https://arxiv.org/pdf/2411.03517'
-citation: 'P. Bansal, A. Kavis, S. Sanghavi. <b>arXiv</b>.'
+paperurl: 'https://openreview.net/pdf?id=nCAdkkAeR9'
+citation: 'P. Bansal, A. Kavis, S. Sanghavi. <b>NeurIPS 2025</b>.'
 ---
 
-<!-- [Download](https://arxiv.org/pdf/2411.03517) -->
+<!-- [Download](https://openreview.net/pdf?id=nCAdkkAeR9) -->
 
 <!-- Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1). -->
