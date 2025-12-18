@@ -5,12 +5,12 @@ selected: true
 permalink: /publication/kavis2025flow
 excerpt:
 date: 2025-05-01
-venue: 'arXiv'
+venue: 'ICML 2025'
 authors: 'S. Sanyal<b>*</b>, H. Prairie<b>*</b>, R. Das<b>*</b>, A. Kavis<b>*</b>, S. Sanghavi'
-paperurl: 'https://arxiv.org/pdf/2502.02797'
-citation: 'S. Sanyal*, H. Prairie*, R. Das*, A. Kavis*, S. Sanghavi. <b>arXiv</b>.'
+paperurl: 'https://openreview.net/pdf?id=13HPTmZKbM'
+citation: 'S. Sanyal*, H. Prairie*, R. Das*, A. Kavis*, S. Sanghavi. <b>ICML 2025 (Spotlight)</b>.'
 ---
 
-<!-- [Download](https://arxiv.org/pdf/2502.02797) -->
+<!-- [Download](https://openreview.net/pdf?id=13HPTmZKbM) -->
 
 <!-- Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1). -->
