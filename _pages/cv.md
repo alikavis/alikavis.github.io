@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[CV](/files/cv.pdf)
+
 Research Interests
 ======
 convex/non-convex optimization, stochastic methods, adaptive algorithms, online learning, machine learning
