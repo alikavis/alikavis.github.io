@@ -216,13 +216,8 @@ h1.hero-name {
 }
 
 /* ── About ────────────────────────────────────────── */
-.about-text {
-  max-width: 640px;
-}
-.about-text p {
-  margin: 0 0 16px;
-  line-height: 1.8;
-}
+.about-text { max-width: 640px; }
+.about-text p { margin: 0 0 16px; line-height: 1.8; }
 .about-text p:last-child { margin-bottom: 0; }
 
 /* ── Research ─────────────────────────────────────── */
@@ -292,12 +287,19 @@ h1.hero-name {
 }
 .pub-entry:last-child { border-bottom: none; }
 
-.pub-title-line {
+/* Title as a subtle link — looks like text, acts like a link */
+.pub-title-link {
   font-size: 0.95rem;
   font-weight: 500;
   line-height: 1.45;
   color: var(--fg);
-  margin: 0;
+  text-decoration: none;
+  display: block;
+}
+.pub-title-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .pub-authors-line {
@@ -315,9 +317,8 @@ h1.hero-name {
 .pub-meta {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
-  margin: 0;
 }
 
 .pub-venue-name {
@@ -335,6 +336,22 @@ h1.hero-name {
   background: rgba(26, 82, 163, 0.1);
   color: var(--accent);
   font-style: normal;
+}
+
+/* Small arXiv/paper link chip */
+.pub-ext-link {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  opacity: 0.8;
+  letter-spacing: 0.01em;
+}
+.pub-ext-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: var(--accent-h);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -394,16 +411,12 @@ h1.hero-name {
   .nav-inner { padding-inline: 18px; }
   .site-main { padding-inline: 18px; }
   .site-footer { padding-inline: 18px; }
-
   .hero { flex-direction: column; gap: 18px; padding-block: 40px 36px; }
   h1.hero-name { font-size: 1.8rem; }
   .hero-avatar { width: 76px; height: 76px; font-size: 1.35rem; }
-
   .research-grid { grid-template-columns: 1fr; }
-
   .nav-links { gap: 14px; }
   .nav-links a { font-size: 0.75rem; }
-
   .contact-table { grid-template-columns: 1fr; gap: 4px; }
   .contact-key { margin-top: 10px; }
   .contact-key:first-child { margin-top: 0; }
@@ -440,9 +453,7 @@ h1.hero-name {
     <div class="hero-info">
       <h1 class="hero-name">Ali Kavis</h1>
       <p class="hero-role">Senior Researcher</p>
-      <p class="hero-inst">
-        Optimization &amp; Decision Intelligence Group · ETH Zürich
-      </p>
+      <p class="hero-inst">Optimization &amp; Decision Intelligence Group · ETH Zürich</p>
       <div class="hero-links">
         <a class="chip" href="https://scholar.google.com/citations?user=sPrPq6oAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar profile">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -472,19 +483,23 @@ h1.hero-name {
   <section class="content-section" id="about" aria-labelledby="about-heading">
     <p class="eyebrow" id="about-heading">About</p>
     <div class="about-text">
-      <p>
-        I am a Senior Researcher at the Optimization &amp; Decision Intelligence (ODI) Group at
-        <a href="https://inf.ethz.ch/" target="_blank" rel="noopener">ETH Zürich</a>.
+      <p>I am a Senior Researcher at the Optimization &amp; Decision Intelligence (ODI) Group at
+        <a href="https://inf.ethz.ch/" target="_blank" rel="noopener">ETH Zürich</a>,
+        led by <a href="https://niaohe.ece.illinois.edu/" target="_blank" rel="noopener">Niao He</a>.
+        In August 2027, I will be joining the <a href="https://cs.au.dk/" target="_blank" rel="noopener">Department of Computer Science</a>
+        at <a href="https://www.au.dk/en/" target="_blank" rel="noopener">Aarhus University</a>
+        as a tenure-track Assistant Professor.
         I received my PhD from <a href="https://www.epfl.ch/" target="_blank" rel="noopener">EPFL</a>
         in August 2023, where I was advised by
         <a href="https://cevher.github.io/" target="_blank" rel="noopener">Volkan Cevher</a>.
         Prior to joining ETH, I was a Postdoctoral Fellow at
         <a href="https://www.utexas.edu/" target="_blank" rel="noopener">UT Austin</a>,
+        hosted by <a href="https://www.ece.utexas.edu/people/faculty/aryan-mokhtari" target="_blank" rel="noopener">Aryan Mokhtari</a>
+        and <a href="https://www.ece.utexas.edu/people/faculty/sujay-sanghavi" target="_blank" rel="noopener">Sujay Sanghavi</a>,
         affiliated with the <a href="https://ifml.institute/" target="_blank" rel="noopener">IFML</a>
         and the <a href="https://tripods.utexas.edu/" target="_blank" rel="noopener">TRIPODS Institute</a>.
       </p>
-      <p>
-        My research centers on the design and analysis of <strong>universal and parameter-free algorithms</strong>
+      <p>My research centers on the design and analysis of <strong>universal and parameter-free algorithms</strong>
         for stochastic optimization. I aim to build methods that work well across diverse problem settings
         without requiring practitioners to hand-tune hyperparameters such as learning rates or noise estimates.
         My work spans first-order and second-order methods, extensions to games and minimax problems,
@@ -496,26 +511,23 @@ h1.hero-name {
   <!-- Research -->
   <section class="content-section" id="research" aria-labelledby="research-heading">
     <p class="eyebrow" id="research-heading">Research</p>
-    <p class="research-intro">
-      A central goal of my work is closing the gap between the idealized conditions assumed in optimization
-      theory and the messy, parameter-ignorant reality of applied machine learning.
-    </p>
+    <p class="research-intro">I work at the intersection of optimization theory and machine learning, studying how to design algorithms that are both optimal in theory and practical to deploy — without hand-tuning.</p>
     <div class="research-grid">
       <div class="research-card">
-        <h3>Universal &amp; Parameter-Free Optimization</h3>
-        <p>Algorithms that achieve optimal convergence rates across convex and non-convex settings without knowledge of problem-specific constants such as smoothness or noise variance.</p>
+        <h3>Stochastic Optimization</h3>
+        <p>How do gradient-based algorithms behave under noise — and what convergence guarantees can we prove without overly optimistic assumptions? I study both first- and second-order methods in non-convex and constrained settings, including high-probability bounds and almost-sure convergence.</p>
       </div>
       <div class="research-card">
-        <h3>Adaptive First-Order Methods</h3>
-        <p>Fully adaptive SGD variants (STORM+, AdaGrad-type methods, variance reduction) that self-tune to problem geometry and noise without manual learning-rate selection.</p>
+        <h3>Universal &amp; Parameter-Free Methods</h3>
+        <p>Most algorithms require the practitioner to know or tune problem-specific constants — smoothness, noise variance, diameter. I am interested in methods that adapt to these quantities automatically, achieving optimal rates across problem classes without prior knowledge.</p>
       </div>
       <div class="research-card">
-        <h3>Second-Order &amp; Accelerated Methods</h3>
-        <p>Noise-adaptive second-order algorithms (Extra-Newton and beyond) that exploit curvature information while remaining practical under stochastic noise and inexact oracle access.</p>
+        <h3>Minimax Optimization &amp; Games</h3>
+        <p>Saddle-point problems and two-player zero-sum games arise throughout machine learning. I study the structural properties that make these problems hard or easy, and design algorithms — including second-order and optimistic methods — that exploit those properties efficiently.</p>
       </div>
       <div class="research-card">
-        <h3>Minimax &amp; Game Optimization</h3>
-        <p>Optimal and adaptive methods for two-player games and minimax problems, including second-order optimistic approaches and the theoretical role of alternation in weakening adversarial dynamics.</p>
+        <h3>Online Learning</h3>
+        <p>Online learning offers a powerful framework for reasoning about sequential decision-making under uncertainty. I am interested in regret minimization, online-to-batch conversions, and how online learning ideas can be leveraged to build better adaptive algorithms for offline optimization.</p>
       </div>
     </div>
   </section>
@@ -525,13 +537,18 @@ h1.hero-name {
     <p class="eyebrow" id="pubs-heading">Publications</p>
     <p class="pub-count">16 peer-reviewed papers · 1 preprint · * denotes equal contribution</p>
 
-    <!-- Preprints -->
+    <!-- Preprint -->
     <div class="pub-year-group">
       <p class="pub-year-label">Preprint</p>
       <div class="pub-entry">
-        <p class="pub-title-line">Online Learning-guided Learning Rate Adaptation via Gradient Alignment</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2506.08419" target="_blank" rel="noopener">
+          Online Learning-guided Learning Rate Adaptation via Gradient Alignment
+        </a>
         <p class="pub-authors-line">R. Jiang*, <strong>A. Kavis*</strong>, A. Mokhtari*</p>
-        <div class="pub-meta"><span class="pub-venue-name">Preprint</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">Preprint</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2506.08419" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
     </div>
 
@@ -539,17 +556,25 @@ h1.hero-name {
     <div class="pub-year-group">
       <p class="pub-year-label">2025</p>
       <div class="pub-entry">
-        <p class="pub-title-line">Upweighting Easy Samples in Fine-Tuning Mitigates Forgetting</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2502.02797" target="_blank" rel="noopener">
+          Upweighting Easy Samples in Fine-Tuning Mitigates Forgetting
+        </a>
         <p class="pub-authors-line">S. Sanyal*, H. Prairie*, R. Das*, <strong>A. Kavis*</strong>, S. Sanghavi</p>
         <div class="pub-meta">
           <span class="pub-venue-name">ICML 2025</span>
           <span class="badge">Spotlight</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2502.02797" target="_blank" rel="noopener">arXiv ↗</a>
         </div>
       </div>
       <div class="pub-entry">
-        <p class="pub-title-line">Understanding Self-Supervised Learning via Gaussian Mixture Models</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2411.03517" target="_blank" rel="noopener">
+          Understanding Self-Supervised Learning via Gaussian Mixture Models
+        </a>
         <p class="pub-authors-line">P. Bansal, <strong>A. Kavis</strong>, S. Sanghavi</p>
-        <div class="pub-meta"><span class="pub-venue-name">NeurIPS 2025</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">NeurIPS 2025</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2411.03517" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
     </div>
 
@@ -557,19 +582,34 @@ h1.hero-name {
     <div class="pub-year-group">
       <p class="pub-year-label">2024</p>
       <div class="pub-entry">
-        <p class="pub-title-line">Adaptive and Optimal Second-order Optimistic Methods for Minimax Optimization</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2406.02016" target="_blank" rel="noopener">
+          Adaptive and Optimal Second-order Optimistic Methods for Minimax Optimization
+        </a>
         <p class="pub-authors-line">R. Jiang, <strong>A. Kavis</strong>, Q. Jin, S. Sanghavi, A. Mokhtari</p>
-        <div class="pub-meta"><span class="pub-venue-name">NeurIPS 2024</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">NeurIPS 2024</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2406.02016" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
       <div class="pub-entry">
-        <p class="pub-title-line">Advancing the lower bounds: An accelerated, stochastic, second-order method with optimal adaptation to inexactness</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2309.01570" target="_blank" rel="noopener">
+          Advancing the lower bounds: An accelerated, stochastic, second-order method with optimal adaptation to inexactness
+        </a>
         <p class="pub-authors-line">A. Agafonov, D. Kamzolov, A. Gasnikov, <strong>A. Kavis</strong>, K. Antonakopoulos, V. Cevher, M. Takáč</p>
-        <div class="pub-meta"><span class="pub-venue-name">ICLR 2024</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">ICLR 2024</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2309.01570" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
       <div class="pub-entry">
-        <p class="pub-title-line">Universal Gradient Methods for Stochastic Convex Optimization</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2402.03210" target="_blank" rel="noopener">
+          Universal Gradient Methods for Stochastic Convex Optimization
+        </a>
         <p class="pub-authors-line">A. Rodomanov, <strong>A. Kavis</strong>, Y. Wu, K. Antonakopoulos, V. Cevher</p>
-        <div class="pub-meta"><span class="pub-venue-name">ICML 2024</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">ICML 2024</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2402.03210" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
     </div>
 
@@ -577,9 +617,15 @@ h1.hero-name {
     <div class="pub-year-group">
       <p class="pub-year-label">2023</p>
       <div class="pub-entry">
-        <p class="pub-title-line">Alternation makes the adversary weaker in two-player games</p>
+        <a class="pub-title-link" href="https://papers.nips.cc/paper_files/paper/2023/hash/3acb49252187efa352a1ae0e4b066ced-Abstract-Conference.html" target="_blank" rel="noopener">
+          Alternation makes the adversary weaker in two-player games
+        </a>
         <p class="pub-authors-line">V. Cevher, A. Cutkosky, <strong>A. Kavis</strong>, G. Piliouras, S. Skoulakis, L. Viano</p>
-        <div class="pub-meta"><span class="pub-venue-name">NeurIPS 2023</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">NeurIPS 2023</span>
+          <span class="badge">Spotlight</span>
+          <a class="pub-ext-link" href="https://papers.nips.cc/paper_files/paper/2023/hash/3acb49252187efa352a1ae0e4b066ced-Abstract-Conference.html" target="_blank" rel="noopener">Paper ↗</a>
+        </div>
       </div>
     </div>
 
@@ -587,19 +633,34 @@ h1.hero-name {
     <div class="pub-year-group">
       <p class="pub-year-label">2022</p>
       <div class="pub-entry">
-        <p class="pub-title-line">Adaptive Stochastic Variance Reduction for Non-convex Finite-Sum Minimization</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2211.01851" target="_blank" rel="noopener">
+          Adaptive Stochastic Variance Reduction for Non-convex Finite-Sum Minimization
+        </a>
         <p class="pub-authors-line"><strong>A. Kavis*</strong>, S. Skoulakis*, K. Antonakopoulos, L. T. Dadi, V. Cevher</p>
-        <div class="pub-meta"><span class="pub-venue-name">NeurIPS 2022</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">NeurIPS 2022</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2211.01851" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
       <div class="pub-entry">
-        <p class="pub-title-line">Extra-Newton: A First Approach to Noise-Adaptive Accelerated Second-Order Methods</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2211.01832" target="_blank" rel="noopener">
+          Extra-Newton: A First Approach to Noise-Adaptive Accelerated Second-Order Methods
+        </a>
         <p class="pub-authors-line">K. Antonakopoulos*, <strong>A. Kavis*</strong>, V. Cevher</p>
-        <div class="pub-meta"><span class="pub-venue-name">NeurIPS 2022</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">NeurIPS 2022</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2211.01832" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
       <div class="pub-entry">
-        <p class="pub-title-line">High Probability Bounds for a Class of Non-convex Algorithms with AdaGrad Stepsize</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2204.02833" target="_blank" rel="noopener">
+          High Probability Bounds for a Class of Non-convex Algorithms with AdaGrad Stepsize
+        </a>
         <p class="pub-authors-line"><strong>A. Kavis</strong>, K. Y. Levy, V. Cevher</p>
-        <div class="pub-meta"><span class="pub-venue-name">ICLR 2022</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">ICLR 2022</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2204.02833" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
     </div>
 
@@ -607,14 +668,24 @@ h1.hero-name {
     <div class="pub-year-group">
       <p class="pub-year-label">2021</p>
       <div class="pub-entry">
-        <p class="pub-title-line">STORM+: Fully Adaptive SGD with Recursive Momentum for Nonconvex Optimization</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2111.01040" target="_blank" rel="noopener">
+          STORM+: Fully Adaptive SGD with Recursive Momentum for Nonconvex Optimization
+        </a>
         <p class="pub-authors-line">K. Y. Levy, <strong>A. Kavis</strong>, V. Cevher</p>
-        <div class="pub-meta"><span class="pub-venue-name">NeurIPS 2021</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">NeurIPS 2021</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2111.01040" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
       <div class="pub-entry">
-        <p class="pub-title-line">Sifting through the noise: Universal first-order methods for stochastic variational inequalities</p>
+        <a class="pub-title-link" href="https://proceedings.neurips.cc/paper/2021/hash/6d65b5ac1f4ec80b9a7309311f4f9b13-Abstract.html" target="_blank" rel="noopener">
+          Sifting through the noise: Universal first-order methods for stochastic variational inequalities
+        </a>
         <p class="pub-authors-line">K. Antonakopoulos, T. Pethick, <strong>A. Kavis</strong>, P. Mertikopoulos, V. Cevher</p>
-        <div class="pub-meta"><span class="pub-venue-name">NeurIPS 2021</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">NeurIPS 2021</span>
+          <a class="pub-ext-link" href="https://proceedings.neurips.cc/paper/2021/hash/6d65b5ac1f4ec80b9a7309311f4f9b13-Abstract.html" target="_blank" rel="noopener">Paper ↗</a>
+        </div>
       </div>
     </div>
 
@@ -622,14 +693,24 @@ h1.hero-name {
     <div class="pub-year-group">
       <p class="pub-year-label">2020</p>
       <div class="pub-entry">
-        <p class="pub-title-line">On the almost sure convergence of stochastic gradient descent in non-convex problems</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2006.11144" target="_blank" rel="noopener">
+          On the almost sure convergence of stochastic gradient descent in non-convex problems
+        </a>
         <p class="pub-authors-line">P. Mertikopoulos, N. Hallak, <strong>A. Kavis</strong>, V. Cevher</p>
-        <div class="pub-meta"><span class="pub-venue-name">NeurIPS 2020</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">NeurIPS 2020</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2006.11144" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
       <div class="pub-entry">
-        <p class="pub-title-line">Double-Loop Unadjusted Langevin Algorithm</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/2007.01147" target="_blank" rel="noopener">
+          Double-Loop Unadjusted Langevin Algorithm
+        </a>
         <p class="pub-authors-line">P. T. Y. Rolland, A. Eftekhari, <strong>A. Kavis</strong>, V. Cevher</p>
-        <div class="pub-meta"><span class="pub-venue-name">ICML 2020</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">ICML 2020</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/2007.01147" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
     </div>
 
@@ -637,14 +718,25 @@ h1.hero-name {
     <div class="pub-year-group">
       <p class="pub-year-label">2019</p>
       <div class="pub-entry">
-        <p class="pub-title-line">UniXGrad: A Universal, Adaptive Algorithm with Optimal Guarantees for Constrained Optimization</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/1910.13857" target="_blank" rel="noopener">
+          UniXGrad: A Universal, Adaptive Algorithm with Optimal Guarantees for Constrained Optimization
+        </a>
         <p class="pub-authors-line"><strong>A. Kavis*</strong>, K. Y. Levy*, F. Bach, V. Cevher</p>
-        <div class="pub-meta"><span class="pub-venue-name">NeurIPS 2019</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">NeurIPS 2019</span>
+          <span class="badge">Spotlight</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/1910.13857" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
       <div class="pub-entry">
-        <p class="pub-title-line">Efficient learning of smooth probability functions from Bernoulli tests with guarantees</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/1812.04428" target="_blank" rel="noopener">
+          Efficient learning of smooth probability functions from Bernoulli tests with guarantees
+        </a>
         <p class="pub-authors-line">P. T. Y. Rolland, <strong>A. Kavis</strong>, A. Immer, A. Singla, V. Cevher</p>
-        <div class="pub-meta"><span class="pub-venue-name">ICML 2019</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">ICML 2019</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/1812.04428" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
     </div>
 
@@ -652,9 +744,15 @@ h1.hero-name {
     <div class="pub-year-group">
       <p class="pub-year-label">2018</p>
       <div class="pub-entry">
-        <p class="pub-title-line">Mirrored Langevin Dynamics</p>
+        <a class="pub-title-link" href="https://arxiv.org/abs/1802.10174" target="_blank" rel="noopener">
+          Mirrored Langevin Dynamics
+        </a>
         <p class="pub-authors-line">Y. Hsieh, <strong>A. Kavis</strong>, P. Rolland, V. Cevher</p>
-        <div class="pub-meta"><span class="pub-venue-name">NeurIPS 2018</span></div>
+        <div class="pub-meta">
+          <span class="pub-venue-name">NeurIPS 2018</span>
+          <span class="badge">Spotlight</span>
+          <a class="pub-ext-link" href="https://arxiv.org/abs/1802.10174" target="_blank" rel="noopener">arXiv ↗</a>
+        </div>
       </div>
     </div>
 
@@ -667,10 +765,7 @@ h1.hero-name {
       <span class="contact-key">Email</span>
       <span class="contact-val">ali.kavis@inf.ethz.ch</span>
       <span class="contact-key">Address</span>
-      <span class="contact-val">
-        ETH Zürich, Department of Computer Science<br>
-        Universitätstrasse 6, 8092 Zürich, Switzerland
-      </span>
+      <span class="contact-val">ETH Zürich, Department of Computer Science<br>Universitätstrasse 6, 8092 Zürich, Switzerland</span>
       <span class="contact-key">Scholar</span>
       <span class="contact-val">
         <a href="https://scholar.google.com/citations?user=sPrPq6oAAAAJ" target="_blank" rel="noopener">
@@ -678,10 +773,7 @@ h1.hero-name {
         </a>
       </span>
     </div>
-    <p class="contact-note">
-      I am happy to discuss research collaborations, questions about my work, or opportunities
-      for prospective students and postdocs. The best way to reach me is by email.
-    </p>
+    <p class="contact-note">I am happy to discuss research collaborations, questions about my work, or opportunities for prospective students and postdocs. The best way to reach me is by email.</p>
   </section>
 
 </main>
